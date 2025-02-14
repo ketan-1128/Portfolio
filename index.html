@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Dating profile</title>
+        <style>
+            body{
+                background-color: rgb(215, 138, 232);
+                font-family: Roboto;
+            }
+            .profile-card{
+                background-color: rgb(255, 255, 255);
+                height: 70vh;
+                width: 55vw;
+                margin-top:8%;
+                margin-left: 20%;
+                display: flex;
+                flex-direction: column;
+                border-radius: 50px;
+                box-shadow: 0px 0px 100px 100px rgb(102, 220, 220);
+            }
+            .image-div{
+                height: 150px;
+                width: 100%;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+            }
+            .description-container{
+                flex:1;
+                width: 97%;
+                padding: 25px 10px 10px 10px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            .profile-image{
+                height: 100%;
+                width: 150px;
+                border-radius: 50%;
+                object-fit: cover;
+                margin-left: 100px;
+                margin-top: 20px;
+                /* object-position: top; */
+            }
+            .profile-image:hover{
+            animation: bounce 1.5s ease-in-out infinite;
+        }
+        @keyframes bounce {
+            0% {
+                scale:1;
+            }
+            50% {
+                scale:1.1;
+            }
+            100% {
+                scale:1;
+            }
+        }
+            .quality{
+                border: 2px solid rgb(230, 51, 51);
+                height: 15%;
+                width: 65%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 20px;
+                color: rgb(225, 33, 65);
+                margin: 5px 0px 5px 0px;
+                border-radius: 15px;
+            }
+            .quality:hover{
+                background-color: rgb(58, 193, 250);
+                color: azure;
+                cursor: pointer;
+                transition: 0.4s;
+                border: 2px solid rgb(51, 194, 230);
+                width:70%;
+            }
+            .name-div{
+                height: 100%;
+                width: 250px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            p{
+                margin: 10px 0px 5px 0px;
+            }
+            .name{
+                font-size: 35px;
+                font-weight: bold;
+                color: #00b7ff;
+            }
+            .name:hover{
+                color: rgb(215, 84, 58);
+                font-size: 55px;
+                cursor: pointer;
+                transition:1s ;
+            }
+            .age{
+                font-size: 20px;
+                margin-top: 10px;
+            }
+            .loc{
+                font-size: 25px;
+                margin-top: 5px;
+                font-weight: bold;
+                color:#878787;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <div class="profile-card">
+            <div class="image-div"><img class="profile-image" src="img3.jpg" alt="Profile Picture">
+                <div class="name-div">
+                <p class="name">KETAN</p>
+                <p class="age">Age : 19</p>
+                <p class="loc">Meerut, Uttar Pradesh</p>
+                </div>
+            </div>
+            <div class="description-container">
+                <div class="quality">Currently studying in IIIT Ranchi</div>
+                <div class="quality">Interests: Chess,listening music</div>
+                <div class="quality">Good listener</div>
+                <div class="quality">Selenophile</div>
+                <div class="quality">Looking For
+                    Someone kind and adventurous.</div>
+            </div>
+        </div>
+    </body>   
+</html>
